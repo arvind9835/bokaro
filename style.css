@@ -1,0 +1,239 @@
+body {
+    margin: 0;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    background: #ffffff;
+}
+
+/* NAVBAR - FIXED AT TOP */
+.navbar {
+    background: white;
+    display: flex;
+    align-items: center;
+    padding: 12px 30px;
+    border-bottom: 1px solid #e5e5e5;
+
+    position: fixed;    /* freeze navbar */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;      /* stay above all content */
+}
+
+/* LOGO */
+.logo img {
+    height: 100px;
+}
+
+/* MENU */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin-left: auto;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #1f4d2b; /* dark green */
+    font-weight: 600;
+    padding: 8px 5px;
+    transition: color 0.2s ease, border-bottom 0.2s ease;
+}
+
+/* HOVER EFFECT */
+.nav-links a:hover {
+    color: #0f2f1c;
+    border-bottom: 2px solid #1f4d2b;
+}
+
+/* DROPDOWN */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    background: white;
+    border: 1px solid #ddd;
+    min-width: 180px;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.dropdown-menu li {
+    padding: 0;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px 20px;
+    color: #1f4d2b;
+    font-weight: normal;
+}
+
+.dropdown-menu a:hover {
+    background: #f4f7f5;
+}
+
+/* SHOW DROPDOWN ON HOVER */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* SLIDESHOW */
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    height: 75vh;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+/* HERO IMAGE (STATIC) */
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+
+
+/* CAPTION */
+.caption {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    background: rgba(0, 0, 0, 0.55);
+    color: white;
+    padding: 12px 18px;
+    font-size: 20px;
+    border-left: 5px solid #1f4d2b;
+}
+
+/* RIGHT NOW IN BOKARO SECTION */
+
+.right-now {
+    background: #f7f3ea; /* cream shade */
+    padding: 70px 30px;
+}
+
+/* CENTERED CONTENT CONTAINER */
+.right-now-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.right-now h2 {
+    color: #000000;
+	font-family: Arial;
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 40px;
+    letter-spacing: 0px;
+}
+
+/* GRID: 2 ROWS × 3 COLUMNS */
+.right-now-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-items: center;
+}
+
+/* IMAGE TILES */
+.right-now-grid img {
+    width: 300px;          /* approx 2–2.2 inches */
+    height: 300px;
+    object-fit: cover;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* HOVER EFFECT */
+.right-now-grid img:hover {
+    transform: scale(1.04);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
+}
+
+/* FEATURE EDITORIAL SECTION */
+
+.feature-section {
+    background: #ffffff;
+    padding: 80px 20px;
+}
+
+.feature-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+/* IMAGE */
+.feature-image img {
+    width: 100%;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+/* CONTENT */
+.feature-content h3 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.feature-content p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #333333;
+    margin-bottom: 15px;
+}
+
+/* CTA BUTTON */
+.feature-button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 26px;
+    background: #1f4d2b; /* dark green */
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.feature-button:hover {
+    background: #163a21;
+    transform: translateY(-2px);
+}
+
+
